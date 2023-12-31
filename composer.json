@@ -1,0 +1,25 @@
+{
+  "name": "wp-launchpad/bus",
+  "description": "Command bus for Launchpad framework",
+  "type": "library",
+  "keywords": [
+    "wordpress",
+    "framework",
+    "plugin"
+  ],
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "CrochetFeve0251"
+    }
+  ],
+  "require": {
+    "wp-launchpad/core": "^0.1",
+    "league/tactician": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "LaunchpadBus\\": "src/"
+    }
+  }
+}
