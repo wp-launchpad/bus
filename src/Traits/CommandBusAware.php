@@ -11,7 +11,7 @@ trait CommandBusAware
      */
     protected $command_bus;
 
-    public function set_command_bus(BusInterface $bus)
+    public function set_command_bus(BusInterface $bus): void
     {
         $this->command_bus = $bus;
     }

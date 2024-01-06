@@ -14,12 +14,22 @@
     }
   ],
   "require": {
-    "wp-launchpad/core": "^0.1",
+    "wp-launchpad/core": "^0.2",
     "league/tactician": "^1.1"
+  },
+  "require-dev": {
+    "wp-media/phpunit": "^3.0",
+    "wp-launchpad/cli": "^1.0.2",
+    "wp-launchpad/phpunit-wp-hooks": "^1.0"
   },
   "autoload": {
     "psr-4": {
       "LaunchpadBus\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "LaunchpadBus\\Tests\\": "tests/"
     }
   }
 }

@@ -11,7 +11,7 @@ trait QueryBusAware
      */
     protected $query_bus;
 
-    public function set_query_bus(BusInterface $bus)
+    public function set_query_bus(BusInterface $bus): void
     {
         $this->query_bus = $bus;
     }

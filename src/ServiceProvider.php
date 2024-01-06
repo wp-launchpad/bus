@@ -6,6 +6,7 @@ use LaunchpadBus\Bus\ContainerLocator;
 use LaunchpadBus\Bus\Queries\Bus;
 use LaunchpadBus\Bus\Queries\BusInterface;
 use LaunchpadBus\Interfaces\CommandBusAwareInterface;
+use LaunchpadBus\Interfaces\QueryBusAwareInterface;
 use LaunchpadBus\Traits\QueryBusAware;
 use LaunchpadCore\Container\AbstractServiceProvider;
 use LaunchpadCore\Container\HasInflectorInterface;
@@ -52,7 +53,7 @@ class ServiceProvider extends AbstractServiceProvider implements HasInflectorInt
                     \LaunchpadBus\Bus\Commands\BusInterface::class,
                 ],
             ],
-            QueryBusAware::class => [
+            QueryBusAwareInterface::class => [
                 'method' => 'set_query_bus',
                 'args' => [
                     BusInterface::class,
